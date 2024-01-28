@@ -1,2 +1,2 @@
-# Projeto front-end da tutora ia
-Aqui devera constar a documentação do front-end
+# Tutora.IA-Front
+Front End do projeto DemoDay Tutora.IA desenvolvido com Next.JS
