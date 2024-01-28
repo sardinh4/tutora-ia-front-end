@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@300; 400; 500; 600; 700; 800; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* background com fundo redondo  */
+.backgroundLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.backgroundLogin::after {
+    content: "";
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px);
+}
+
+.backgroundLogin::before {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.backgroundLogin::after {
+    bottom: 0;
+    right: 0;
+}
+
+.ArrowBackButton{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.circle{
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textTop{
+    display: none;
+}
+
+.wrapper{
+    margin-left: 17%;
+    width: 34%;
+    background: rgba(217, 217, 217, 0.10);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+ .wrapper h1{
+    color: #6C33D7;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon{
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.wrapper .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 35px 0;
+}
+
+.box{
+    width: 80%;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .rememberforgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;  
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.rememberforgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.rememberforgot a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.rememberforgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 80%;
+    height: 3rem;
+    background: #6C33D7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin: 2rem auto;
+}
+
+.wrapper .btn:hover{
+    background-color: #4B2395;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.textright{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adiciona isso para alinhar os elementos no centro horizontal */
+    width: 30%;
+    height: 26.4375rem;
+    flex-shrink: 0;
+    margin-right: 15%;
+}
+
+.textright h1{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;    
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.textright h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+}
+
+.textright h3{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3rem;
+}
+
+.botao{
+    width: 10rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 0.40rem;
+    border: 1px solid #DDD;
+    background: transparent;
+    margin-top: 1rem;
+    color: #6C33D7;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #6C33D7;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.otherOptions{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.line{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ou{
+    color: #6C33D7;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1288px){
+    .box, 
+    .wrapper .rememberforgot {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1067px){
+    .wrapper{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .textright {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .ArrowBackButton{
+        display: none;
+    }
+    .wrapper .rememberforgot {
+        font-size: 12px;
+    }
+    .inputbox input {
+        font-size: 13px;
+    }
+
+    .textright h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+        .backgroundLogin{
+            flex-direction: column;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0%;
+            border: none
+        }
+
+        .wrapper .inputbox{
+            margin: 15px 0;
+        }
+
+        .wrapper .rememberforgot{
+            margin-bottom: 0px;
+        }
+
+        .wrapper .btn{
+            margin-bottom: 5px;
+        }
+
+        .textTop{
+            margin-top: 4%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Adiciona isso para alinhar os elementos no centro horizontal */
+            width: 100%;
+            flex-shrink: 0;
+        }
+        
+        .textTop h1{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;    font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 8vw;
+            margin-top: 5%;
+        }
+
+        .textTop h2{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;    font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 3vw;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        
+        .textTop h2 br{
+            display: none;
+        }
+
+        .textright h1,
+        .textright h2 {
+            display: none;
+        }
+        .textright{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .textright h3{
+            font-size: 5.8vw;
+            margin-top: 0px;
+        }
+
+        .botao{
+            width: 60%;
+            height: 10%;
+            border-radius: 10px;
+            border: 1px solid #DDD;
+            margin-top: 10%;
+            font-size: 1rem;
+            margin-bottom: 0%;
+        }
+}

@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+/* Sobre nós */
+
+.aboutUs {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+#logo {
+    width: 50vw;
+}
+
+.pAboutUs {
+    text-align: center;
+    width: 80%;
+}
+
+
+/* Sobre a Aurora */
+
+.aboutAurora,
+.loading,
+.levelingUp {
+    border-bottom: 2px solid rgba(82, 82, 82, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    text-align: center;
+
+}
+
+.aboutAurora {
+    padding-top: 0;
+}
+
+.aurora {
+    height: 70vh;
+    margin-right: 8vw;
+}
+
+.aurora2 {
+    display: none;
+}
+
+.auroraContainerInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    width: 40%;
+}
+
+/* Carregando */
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.loading,
+.levelingUp {
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+.gears {
+    width: 720px;
+    height: 200px;
+    position: relative;
+    margin: 3rem;
+}
+
+
+.gear {
+    position: absolute;
+}
+
+.gear1 {
+    width: 200px;
+    left: 35%;
+    rotate: -5deg;
+    animation: rotate 20s infinite linear;
+}
+
+.gear2 {
+    width: 150px;
+    top: 61%;
+    left: 16%;
+    rotate: 11deg;
+    animation: rotate 20s infinite linear reverse;
+
+}
+
+.gear3 {
+    width: 80px;
+    bottom: -35%;
+    left: 66%;
+    rotate: -10deg;
+    animation: rotate 20s infinite linear;
+
+
+}
+
+.gear4 {
+    width: 100px;
+    bottom: -50%;
+    left: 52%;
+    rotate: 10deg;
+    animation: rotate 20s infinite linear reverse;
+}
+
+.gear5 {
+    width: 120px;
+    rotate: -5deg;
+    top: -19%;
+    right: 22%;
+    animation: rotate 20s infinite linear reverse;
+}
+
+.gear6 {
+    width: 60px;
+    top: 28%;
+    left: 20.5%;
+    ;
+    rotate: -10deg;
+    animation: rotate 20s infinite linear;
+
+}
+
+@keyframes loadingAnimation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.loadingBar {
+    margin-top: 2rem;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid 4px #6C33D7;
+    overflow: hidden;
+}
+
+.loadingBarFill {
+    height: 100%;
+    width: 0;
+    background-color: #ffffff;
+    animation: loadingAnimation 5s linear infinite;
+}
+
+/* Subindo de Nível */
+
+.level {
+    height: 80px;
+}
+
+
+/* Nosso Time */
+
+.MeetOurTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw 0;
+    gap: 4rem;
+    box-sizing: content-box;
+}
+
+.MeetOurTeam h2 {
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.rowTeam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    gap: 5rem;
+}
+
+/* Equipe Conatiner */
+
+.devContainer {
+    width: 30%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.containerInformation {
+    width: 100%;
+    height: 90%;
+    background-color: #EEEEEE;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+}
+
+.devInformation {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+    gap: 1rem;
+}
+
+.devFunctions {
+
+    font-weight: 600;
+    color: #000;
+}
+
+.devMessage {
+    height: 40%;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.vector {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.message {
+    padding: 3vw 3vw 0 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+    z-index: 2;
+}
+
+
+.devPhoto {
+    width: 14vw;
+    height: 15vw;
+    border-radius: 100%;
+    border: solid 1vw;
+}
+
+.name {
+    padding-top: 1rem;
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+/* Beatriz */
+
+#beatrizImage {
+    border-color: #A3218E;
+}
+
+.nameBeatriz {
+    color: #A3218E;
+}
+
+/* Camille */
+
+#camilleImage {
+    border-color: #832290;
+}
+
+.nameCamille {
+    color: #832290;
+}
+
+/* Davi */
+
+#daviImage {
+    border-color: #722292;
+}
+
+.nameDavi {
+    color: #722292;
+}
+
+/* Erick */
+
+#erickImage {
+    border-color: #5A2294;
+}
+
+.nameErick {
+    color: #5A2294;
+}
+
+/* Erick */
+
+#hernandoImage {
+    border-color: #502394;
+}
+
+.nameHernando {
+    color: #502394;
+}
+
+/* Leonardo */
+
+#leonardoImage {
+    border-color: #402D99;
+}
+
+.nameLeonardo {
+    color: #402D99;
+}
+
+/* Marcos */
+
+#marcosImage {
+    border-color: #1B50A8;
+}
+
+.nameMarcos {
+    color: #1B50A8;
+}
+
+/* Rian */
+
+#rianImage {
+    border-color: #0465B2;
+}
+
+.nameRian {
+    color: #0465B2;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #logo {
+        width: 80vw;
+        min-width: 280px;
+    }
+
+    .pAboutUs {
+        font-size: 1rem;
+    }
+
+
+    .aboutAurora,
+    .loading,
+    .levelingUp {
+        padding: 10vh 5vw;
+
+    }
+
+    .MeetOurTeam {
+        gap: 0;
+
+    }
+
+
+    .rowTeam {
+        flex-direction: column;
+        height: 200vh;
+        width: 700px;
+        gap: 12rem;
+
+    }
+
+
+
+    .devContainer {
+        width: 60%;
+        min-width: 280px;
+        height: 35%;
+    }
+
+
+    .devFunctions {
+        font-size: 1.5rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+
+    .devPhoto {
+        width: 30vh;
+        height: auto;
+        border-radius: 100%;
+        border: solid 1vh;
+    }
+
+    .name {
+        padding-top: 1rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .level {
+        height: 70px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .h2About {
+        font-size: 2.2rem;
+    }
+
+    .aboutAurora {
+        flex-direction: column;
+        gap: 3rem;
+
+    }
+
+    .aurora {
+        display: none;
+    }
+
+    .aurora2 {
+        width: 80%;
+        max-height: 80vh;
+        display: block;
+    }
+
+    .auroraContainerInformation {
+        order: 1;
+        width: 100%;
+    }
+
+    .loading,
+    .levelingUp {
+        max-width: 100%;
+
+    }
+
+    .gears {
+        width: 420px;
+        ;
+        margin: 1rem;
+    }
+
+    .gear1 {
+        width: 150px;
+        top: 20%;
+        left: 35%;
+    }
+
+    .gear2 {
+        width: 110px;
+        top: 70%;
+        left: 12%;
+    }
+
+    .gear3 {
+        width: 60px;
+        bottom: 0%;
+        left: 75%;
+    }
+
+    .gear4 {
+        width: 75px;
+        bottom: -25%;
+        left: 60%;
+    }
+
+    .gear5 {
+        width: 90px;
+        rotate: -5deg;
+        top: -20%;
+    }
+
+    .gear6 {
+        width: 45px;
+        top: 45%;
+        left: 15%;
+    }
+
+
+    .loadingBar {
+        margin-top: 1rem;
+        width: 350px;
+        height: 30px;
+    }
+
+    .level {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .h2About {
+        font-size: 2.2rem;
+    }
+
+    .level {
+        height: 40px;
+    }
+
+    .rowTeam {
+        height: 200vh;
+        width: 550px;
+    }
+
+    .devFunctions {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .gears {
+        width: 320px;
+        ;
+        margin: 1rem;
+    }
+
+    .gear1 {
+        width: 120px;
+        top: 20%;
+        left: 35%;
+    }
+
+    .gear2 {
+        width: 90px;
+        top: 65%;
+        left: 15%;
+    }
+
+    .gear3 {
+        width: 40px;
+        bottom: 15%;
+        left: 75%;
+    }
+
+    .gear4 {
+        width: 55px;
+        bottom: -2%;
+        left: 60%;
+    }
+
+    .gear5 {
+        width: 70px;
+        rotate: -5deg;
+        top: -7%;
+        right: 17%;
+    }
+
+    .gear6 {
+        width: 35px;
+        top: 52%;
+        left: 12%;
+    }
+
+
+    .loadingBar {
+        margin-top: 1rem;
+        width: 250px;
+        height: 30px;
+    }
+
+    .level {
+        height: 30px;
+    }
+
+    .rowTeam {
+        height: 200vh;
+        width: 300px;
+    }
+
+    .devPhoto {
+        width: 25vh;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .h2About {
+        font-size: 2.2rem;
+    }
+}

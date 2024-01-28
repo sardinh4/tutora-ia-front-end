@@ -1,0 +1,130 @@
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 5rem;
+  padding: 1rem;
+}
+
+
+.containerTitle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 45px;
+}
+
+.title{
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
+.frase{
+  background: -webkit-linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
+  background: linear-gradient(to left, #A3218E, #4B2395, #06EFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.doubts{
+  width: 80%;
+  display: flex;
+  background-color: #fff;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.inputDoubts{
+  padding: 1rem 0;
+  border: none;
+  background-color: #fff;
+  border-radius: 40px;
+  color: #000;
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+.inputDoubts:focus {
+  outline: none;
+}
+
+.btnSearch{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.supportLinks{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82%;
+}
+
+.reportButton{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
+.link:hover{
+  color: #4B2395;
+  
+}
+
+@media screen and (max-width: 800px){
+
+  .link{
+    font-size: 1rem;
+    width: auto;
+    text-align: center;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+  .inputDoubts{
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media screen and (max-width: 600px){
+
+  
+  .title{
+    font-size: 2.2rem;
+  }
+
+  .supportLinks{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .inputDoubts{
+    font-size: 1rem;
+  }
+  
+}
+
+

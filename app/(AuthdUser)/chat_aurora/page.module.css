@@ -1,0 +1,151 @@
+
+
+.menuBtn{
+    z-index: 999;
+}
+
+.topSection{
+    position: relative;
+    width: 100%;
+}
+
+
+.bottomSection{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.leftSection{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+}
+
+.topLeftSection{
+    width: 100%;
+    height: 80%;
+    background-color: #333333;
+    border-radius: 1rem;
+    overflow-y: auto;
+    border: solid .5rem #141414;
+}
+
+.answerAurora{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    gap: 1rem;
+}
+
+.answerUser{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:baseline;
+    gap: 1rem;
+    background-color: #272626;
+}
+
+.iconAdnName p{
+    display: none;
+}
+
+.bottomLeftSection{
+    width: 100%;
+    height: 15%;
+}
+
+.rightSection{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+
+.aurora{
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+
+
+@media screen and (max-width:1100px){
+    .titleh2{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px){
+    .rightSection{
+        display: none;
+    }
+
+    .leftSection{
+        width: 100%;
+    }
+    .titleh2{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    .main{
+        padding: 1rem;
+    }
+
+    .titleh2{
+        font-size: 1.4rem;
+    }
+
+    .iconAdnName{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        order: -1;
+    }
+
+    .answerUser, .answerAurora{
+        padding: 1rem;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .answerAurora{
+        align-items: end;
+        text-align: end;
+    }
+
+    .answerUser img, .answerAurora img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .answerAurora img{
+        order: 1;
+    }
+
+    .iconAdnName p{
+        display:inline-block;
+    }
+
+
+}

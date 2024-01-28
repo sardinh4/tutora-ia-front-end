@@ -1,0 +1,57 @@
+.carrosselContainer{
+   width: 100%;
+   height: 70%;
+   overflow-y: hidden;
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   display: flex;
+   gap:2rem;
+  transition: transform 0.5s ease;
+  margin-top: 3rem;
+
+}
+
+
+
+.games{
+  height: 100%;
+  width: auto;
+  min-width: 280px;
+  min-height: 380px;
+  border-radius: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+  .training{
+    font-size: 2.2rem;
+ }
+ 
+}
+
+@media screen and (max-width:700px) {
+
+ .training{
+  font-size: 2rem;
+}
+ 
+}
+
+@media screen and (max-width:500px) {
+  .training{
+    font-size: 1.8rem;
+ }
+ 
+}
+
+
+
+
+
+
+
+

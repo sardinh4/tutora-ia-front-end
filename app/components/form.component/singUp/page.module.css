@@ -1,0 +1,98 @@
+
+.form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form h1{
+    color: #6C33D7;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form .inputError, .form .inputError::placeholder {
+    color: rgb(255, 72, 72);
+    outline: 1px solid rgb(255, 72, 72);
+  }
+
+.form .errorMessage {
+    color: rgb(255, 72, 72);
+    font-size: 0.75rem;
+    margin-top: 8px;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otherOptions{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.line{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ou{
+    color: #6C33D7;
+    font-weight: 600;
+}
+
+
+.inputbox{
+    width: 85%;
+    height: 60px;
+}
+
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+
+.btn{
+    width: 85%;
+    height: 3rem;
+    background: #6C33D7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background-color: #4B2395;
+    color: #FFF;
+    cursor: pointer;
+}

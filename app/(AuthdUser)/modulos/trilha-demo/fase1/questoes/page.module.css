@@ -1,0 +1,411 @@
+
+.containerMainQuestions{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1E0E3B;
+  position: relative;
+  border-radius: 2rem;
+  
+}
+
+.headerQuestions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.mainQuestions {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  overflow-y: scroll;
+}
+
+.mainCont {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.containerQuestions {
+  background: linear-gradient(to right, #A3218E 0%, #A3218E 35%, #ffffff 35%, #ffffff 100%);
+  height: 6rem;
+  width: 100%;
+  border-radius: 11px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.containerQuestions h2,
+.containerQuestions2 h2 {
+  font-size: 2em;
+  color: #000;
+}
+
+.pergunta {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pergunta .p {
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.4rem;
+}
+
+.pergunta h3 {
+  font-weight: 100;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.containerAwsners li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0.2rem ;
+  background: #d9d9d9;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.containerAwsners {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 20% 4%;
+}
+
+.liHover:hover  {
+  background-color: #A3218E;
+  color: #ffffff;
+
+}
+
+
+.containerAwsners .liSelected {
+  color: #ffffff;
+  background-color: #A3218E;
+}
+
+.btn {
+  font-size: 1.rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #4B2395;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.planeButton{
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  
+}
+
+.btnDisable {
+  background-color: #371970;
+}
+
+.mainCont2 {
+  width: 90%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: solid 1rem #371970;
+  border-radius: 20px;
+  padding: 1rem;
+  gap: 2rem;
+
+}
+
+.classification {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  text-align: center;
+  gap: 2rem;
+}
+
+.classificationCont{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 80%;
+  width: 70%;
+
+}
+
+.classificationCont h1{
+  font-size: 2rem;
+}
+
+.auroraImg{
+  height:100%;
+}
+
+.btnClassification {
+  border: none;
+  padding: 1.5vw 5vw;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #A3218E;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.containerQuestions2 {
+  background: linear-gradient(to right, #A3218E 0%, #A3218E 65%, #ffffff 65%, #ffffff 100%);
+  height: 6rem;
+  width: 100%;
+  border-radius: 11px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.containerQuestions3 {
+  background: #A3218E;
+  height: 6rem;
+  width: 80%;
+  border-radius: 11px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  
+  
+}
+
+.containerQuestions3 h2{
+  color: #ffffff;
+ 
+}
+
+
+@media screen and (max-width:1000px){
+  .containerAwsners li {
+    font-size: 1rem;
+  }
+
+  .mainCont {
+    width: 90%;
+  }
+
+  .pergunta .p {
+    font-size: 1.6rem;
+  }
+  
+  .pergunta h3 {
+    font-size: 1.4rem;
+  }
+
+  .classificationCont h1{
+    font-size: 1.6rem;
+  }
+  
+  .auroraImg{
+    height:40vw;
+  }
+
+  .containerQuestions3 h2{
+    font-size: 1.8rem;
+   
+  }
+
+}
+
+@media screen and (max-width:900px){
+
+  .mainCont2 {
+    border: solid 0.7rem #371970;
+    height: 100%;
+    width: 75%;
+  }
+
+  .classification {
+    flex-direction: column;
+  }
+  
+  .classificationCont{
+    flex-direction: column;
+    height: 80%;
+    width: 70%;
+  }
+
+  
+  .classificationCont h1{
+    font-size: 1.2rem;
+  }
+  
+  .auroraImg{
+    height:30vw;
+    order: -1;
+  }
+
+  .containerQuestions3 h2{
+    font-size: 1.4rem;
+   
+  }
+}
+
+@media screen and (max-width:600px){
+  .mainCont2 {
+    height: 100%;
+    width: 100%;
+  }
+
+  .classificationCont{
+    height: 90%;
+    width: 90%;
+  }
+
+  
+  .classificationCont h1{
+    font-size: 1rem;
+  }
+
+  .containerQuestions3 h2{
+    font-size: 1.2rem;
+   
+  }
+
+  .auroraImg{
+    height:25vh;
+  }
+}
+
+@media screen and (max-width:650px){
+
+  .pergunta .p {
+    font-size: 1.2rem;
+  }
+  
+  .pergunta h3 {
+    font-size: 1.2rem;
+  }
+
+  .containerQuestions {
+    height: 3rem;
+  }
+  
+  .containerQuestions h2,
+  .containerQuestions2 h2{
+    font-size: 1.8rem;
+    color: #000;
+  }
+
+}
+
+@media screen and (max-width:500px){
+
+  .pergunta .p {
+    font-size: 1rem;
+  }
+  
+  .pergunta h3 {
+    font-size: 1rem;
+  }
+
+  .containerQuestions {
+    height: 2rem;
+  }
+  
+  .containerQuestions h2,
+  .containerQuestions2 h2 {
+    font-size: 1.4rem;
+    color: #000;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .containerAwsners {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .planeButton{
+    margin-top: 0;
+  }
+
+  .containerAwsners li {
+    height: 60px;
+    padding: 0.5rem ;
+}
+
+}
+
+@media screen and (max-width:350px){
+
+  .containerQuestions h2,
+  .containerQuestions2 h2{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .containerAwsners li {
+   font-size: 0.9rem;
+}
+
+}

@@ -1,0 +1,14 @@
+
+.arrowBackButtonDiv{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+@media screen and (max-width:600px){
+    .arrowBackButtonDiv{
+        display: none;
+    }
+}
+
+

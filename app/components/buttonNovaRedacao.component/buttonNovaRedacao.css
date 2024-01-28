@@ -1,0 +1,23 @@
+.buttonAddRedacao{
+    min-height: 100px;
+    width: 17vw;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.containerImgLapis{
+    position: relative;
+    width: 8vw;
+    height: 8vh;
+}
+
+.lapisImage{
+    object-fit: cover;
+}

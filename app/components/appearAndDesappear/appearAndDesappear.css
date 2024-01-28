@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap');
+
+.cabecalho {
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 5vw;
+}
+
+.menuBtn, .containerMenu {
+  display: none;
+}
+
+/* logo e menu de navegação */
+.containerEsquerda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerImage {
+  display: flex;
+  margin-right: 70px;
+}
+
+.cabecalho ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.cabecalho ul li {
+  margin-right: 30px;
+}
+
+.navBarLink {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  font-size: 22px;
+  font-family: 'Exo 2', sans-serif;
+  transition: color 0.3s ease-in-out;
+}
+
+.navBarLink::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #4b2395;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navBarLink:hover::after {
+  transform: scaleX(1);
+}
+
+/* Lado dos botoes */
+.containerDireita {
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  z-index: 999;
+}
+
+.btnEntrar {
+  background: none;
+  border: 2px solid #4B2395;
+  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.btnEntrar:hover{
+  background: #4B2395;
+}
+
+.btnCadastrar {
+  background-color: #4B2395;
+  border: 2px solid #4B2395;
+  border-radius: 5px;
+  width: 160px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+  outline: none;
+}
+
+.btnTexto {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
+}
+
+.btnCadastrar:hover{
+  background-color: #fff;
+  color: #4B2395;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .cabecalho {
+    height: 90px;
+  }
+
+  .containerImage {
+    margin-right: 50px;
+  }
+
+  .cabecalho ul li {
+    margin-right: 20px;
+  }
+
+  .navBarLink {
+    font-size: 18px;
+  }
+
+  .btnEntrar {
+    width: 100px;
+    height: 40px;
+  }
+
+  .btnCadastrar {
+    width: 130px;
+    height: 40px;
+  }
+
+  .btnTexto {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .cabecalho {
+    height: 80px;
+  }
+
+  .containerImage {
+    margin-right: 40px;
+  }
+
+  .cabecalho ul li {
+    margin-right: 15px;
+  }
+
+  .navBarLink {
+    font-size: 16px;
+  }
+
+  .btnEntrar {
+    width: 90px;
+    height: 35px;
+  }
+
+  .btnCadastrar {
+    width: 130px;
+    height: 35px;
+  }
+
+  .btnTexto {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .menuBtn, .containerMenu {
+    display: block;
+  }
+
+  .navBarLink {
+    display: none;
+  }
+
+
+  .cabecalho {
+    height: 80px;
+  }
+
+  .containerImage {
+    margin-right: 40px;
+  }
+
+  .cabecalho ul li {
+    margin-right: 15px;
+  }
+
+  .navBarLink {
+    font-size: 16px;
+  }
+
+  .btnEntrar {
+    width: 90px;
+    height: 35px;
+  }
+
+  .btnCadastrar {
+    width: 130px;
+    height: 35px;
+  }
+
+  .btnTexto {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  
+  .containerDireita{
+    display: none;
+  }
+
+  .navBarLink {
+    display: none;
+  }
+
+  .cabecalho {
+    height: 80px;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  .containerImage {
+    margin-right: 0;
+  }
+
+  .cabecalho ul li {
+    margin-right: 15px;
+  }
+
+  .navBarLink {
+    font-size: 16px;
+  }
+
+  .btnEntrar {
+    width: 90px;
+    height: 35px;
+  }
+
+  .btnCadastrar {
+    width: 130px;
+    height: 35px;
+  }
+
+  .btnTexto {
+    font-size: 16px;
+  }
+
+
+}

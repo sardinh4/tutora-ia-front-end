@@ -1,0 +1,62 @@
+.sideNavBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #371970;
+    width: 120px;
+    height: 95%;
+    margin-top: 2.5vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 100%;
+    height: 15vh;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.logoImage {
+    object-fit: cover;
+}
+
+.cima{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.navIcon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:900px){
+    .sideNavBar {
+       display: none;
+    }
+}
+
+@media screen and (max-height:700px){
+    .sideNavBar {
+       display: none;
+    }
+}

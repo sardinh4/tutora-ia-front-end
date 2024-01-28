@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@300; 400; 500; 600; 700; 800; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* background com fundo redondo  */
+.backgroundLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+.backgroundLogin::after {
+    content: "";
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px);
+}
+
+.backgroundLogin::before {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.backgroundLogin::after {
+    bottom: 0;
+    right: 0;
+}
+
+.ArrowBackButton{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.circle{
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    filter: blur(120px); 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.textTop{
+    display: none;
+}
+
+.wrapper{
+    margin-left: 17%;
+    width: 34%;
+    background: rgba(217, 217, 217, 0.10);
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+ .wrapper h1{
+    color: #6C33D7;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wrapper p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.wrapper .inputbox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.box{
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.inputbox input::placeholder {
+    color: #fff;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form p{
+    position: relative;
+}
+
+.wrapper .btn{
+    width: 80%;
+    height: 3rem;
+    background: #6C33D7;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .btn:hover{
+    background-color: #4B2395;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.textright{
+    width: 28.6875rem;
+    margin-right: 10%;
+}
+
+.textright h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.textright h3{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 3rem;
+}
+
+/* .textright h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 3rem;
+} */
+
+@media screen and (max-width: 1288px){
+    .wrapper h1{
+        color: #6C33D7;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .wrapper{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .textright {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .ArrowBackButton{
+        display: none;
+    }
+    .inputbox input {
+        font-size: 13px;
+    }
+
+    .textright h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+        .backgroundLogin{
+            flex-direction: column;
+        }
+
+        .wrapper h1{
+            font-size: 2.0rem;
+        }
+
+        .wrapper {
+            width: 90%;
+            margin: 0%;
+            border: none
+        }
+
+        .wrapper .inputbox{
+            margin: 15px 0;
+        }
+
+        .wrapper .btn{
+            margin-bottom: 5px;
+        }
+
+        .textTop{
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Adiciona isso para alinhar os elementos no centro horizontal */
+            width: 100%;
+            flex-shrink: 0;
+        }
+        
+        .textTop h2{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Exo 2', sans-serif;    font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 8vw;
+        }
+
+        .textTop h3{
+            color: #FFF;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;    font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 3.5vw;
+            margin-top: 4%;
+            margin-bottom: 4%;
+        }
+        
+        .textTop h3 br{
+            display: none;
+        }
+
+        .textright h1,
+        .textright h2,
+        .textright h3 {
+            display: none;
+        }
+}

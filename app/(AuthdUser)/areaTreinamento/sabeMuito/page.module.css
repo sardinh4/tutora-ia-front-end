@@ -1,0 +1,355 @@
+.mainHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #0000008c;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    top:5%;
+    left: 2%;
+}
+
+.ContainerHome {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ContainerHome h1 {
+    color: #d9d9d9;
+    font-size: 9vw;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btnHome {
+    font-size: 3rem;
+    border-radius: 20px;
+    padding: 0.5rem 5rem;
+    cursor: pointer;
+    background: #d9d9d9;
+    color: #371970;
+    font-weight: 700;
+    border: none;
+    width: 70vh;
+    max-width: 60vw;
+}
+
+.btnHome:hover {
+    background: #371970;
+    color: #ffffff;
+}
+
+.aurora {
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+}
+
+.logoMain {
+    width: 70vh;
+    max-width: 60vw;
+}
+
+.circle {
+    position: absolute;
+    background-color: #4B2395;
+    border-radius: 50%;
+    z-index: 0;
+    width: 450px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(200px);
+}
+
+.main {
+    display: flex;
+    background-color: #ffffff23;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 6rem;
+}
+
+
+.main h2 {
+    color: #d9d9d9;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main h3 {
+    color: #d9d9d9;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.quizContainer {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 60%;
+    background: #A3218E;
+    border: 8px solid #191919;
+    border-radius: 0px 0px 20px 20px;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.planeButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 3rem;
+}
+
+.btn {
+    font-size: 4rem;
+    border-radius: 20px;
+    cursor: pointer;
+    background: transparent;
+    color: #A3218E;
+    font-weight: 700;
+    rotate: 45deg;
+    border: none;
+}
+
+.btnDisable {
+    background-color: #371970;
+}
+
+.Container li {
+    list-style-type: none;
+    cursor: pointer;
+    height: 6rem;
+    color: #d9d9d9;
+    border: 5px solid #000;
+    font-weight: bold;
+    background: #292929;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.containerAwsners {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 48%
+    48%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem 4%;
+    margin-top: 4vw;
+}
+
+.liHover:hover {
+    background-color: #A3218E;
+    color: #d9d9d9;
+    columns: #fff;
+}
+
+.Container .liSelected {
+    color: #fff;
+    background-color: #A3218E;
+}
+
+.quizResult {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 60vh;
+    background: #292929;
+    border: 8px solid #A3218E;
+    border-radius: 0px 0px 20px 20px;
+    flex-direction: column;
+    padding: 3rem;
+    text-align:center;
+}
+
+.quizResult button {
+    padding: 1rem;
+    width: 90%;
+    margin-top: 12px;
+    cursor: pointer;
+    background-color: #A3218E;
+    color: #d9d9d9;
+    border: none;
+    border-radius:1rem;
+
+}
+
+.quizResult button p{
+    font-size: 2rem;
+}
+
+.Container p {
+    padding: 8px 0;
+}
+
+
+.mainAbout {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    height: 100vh;
+    width: 100vw;
+    background: #0000000a;
+    overflow: hidden;
+    padding: 5vw;
+}
+
+.logoWhite {
+    position: absolute;
+    top: 0;
+    background: #A3218E;
+}
+
+.backPink {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background: #A3218E;
+    position: fixed;
+    height: 7.3vw;
+    bottom: 100px;
+}
+
+.btnAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnAbout button {
+    font-size: 3rem;
+    border: none;
+    padding: 1vw 10vw;
+    background: #A3218E;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dadosContainer {
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    background: #d9d9d9;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 2vw;
+}
+
+.dadosContainer h4 {
+    background: #4B2395;
+    text-align: center;
+    padding: 1vw;
+}
+
+.dados {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: #000;
+    background-color: #d9d9d9;
+
+}
+
+@media screen and (max-width:800px) {
+    .aurora {
+        display: none;
+    }
+
+    .planeButton {
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+    }
+    .btn {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .main h2 {
+        font-size: 2.2rem;
+    }
+    
+    .main h3 {
+        font-size: 1.6rem;
+    }
+
+    .Container li {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main h2 {
+        font-size: 1.8rem;
+    }
+    
+    .main h3 {
+        font-size: 1.4rem;
+    }
+
+    .Container li {
+        font-size: 1.2rem;
+    }
+
+    .quizResult {
+        height: 90vh;
+        padding: 4rem 1rem;
+    }
+    .quizResult button p{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main h2 {
+        font-size: 1.6rem;
+    }
+    
+    .main h3 {
+        font-size: 1.2rem;
+    }
+
+    .Container li {
+        font-size: 1rem;
+    }
+}
+
+
+

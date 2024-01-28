@@ -1,0 +1,236 @@
+.contentContainer {
+    background: #241f43;
+    border-radius: 40px;
+    position: fixed;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.contentDireita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+
+}
+
+.containerCima {
+    width: 100%;
+    height: 130px;
+    background: #402D99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 40px;
+    position: relative;
+}
+
+.infoEsquerda {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.infoEsquerda h3 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 5%;
+}
+
+.infoDireita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.userImage {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.configButton {
+    position: absolute;
+    right: -1%;
+    bottom: -10%;
+    display: block;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+.missoesUsuarioCont {
+    height: 70%;
+    width: 100%;
+    background: #d9d9d9;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    overflow-y: scroll;
+}
+
+.missoesUsuario {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.missaoDia {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #402D99;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.missaoDia h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.missaoDia p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.conquistas {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #0465B2;
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+
+.conquistas h3 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.conquistas p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.conquistas button {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    background: #402D99;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.contentEsquerda {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aurora {
+    height: 80%;
+}
+
+.arrow {
+    position: absolute;
+    width: auto;
+    top: 5%;
+    left: 2%;
+}
+
+@media screen and (max-width:800px) {
+    .aurora {
+        display: none;
+    }
+
+    .contentEsquerda {
+        width: auto;
+    }
+
+    .contentDireita {
+        width: 100%;
+        padding: 5rem 3rem 2rem 3rem;
+
+    }
+
+    .contentContainer {
+        background-color: transparent;
+        width: 90%;
+        height: 90%;
+        padding: 0;
+    }
+
+    .arrow {
+        top: 3%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+
+
+    .contentDireita {
+        padding: 2rem;
+
+    }
+
+    .infoEsquerda h3 {
+        font-size: 20px;
+    }
+
+    .userImage {
+        height: 70%;
+    }
+
+    .missoesUsuarioCont {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .contentDireita {
+        padding: 1rem;
+
+    }
+
+}

@@ -1,0 +1,41 @@
+/* background com fundo redondo  */
+.background2{
+    background-color: #000;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #7c7c7c0a;
+    overflow: hidden;
+    padding: 5vw;
+}
+
+
+.circle,
+.circle2 {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle {
+    width: 350px;
+    height: 350px;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    filter: blur(200px);
+}
+
+.circle2 {
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    filter: blur(150px);
+}
